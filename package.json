@@ -2,14 +2,21 @@
   "name": "ui-kit-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/countdown.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c -o dist/button.min.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "react": "^16.9.0"
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.9.0",
+    "rollup": "^1.21.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-uglify": "^6.0.3"
   }
 }
